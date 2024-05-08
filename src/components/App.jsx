@@ -4,14 +4,8 @@ import { useState } from "react"
 import Header from "./Header.jsx"
 import Footer from "./Footer.jsx"
 import Note from "./Note.jsx"
-import notes from "../notes.js"
 import CreateArea from "./CreateArea.jsx"
 
-let myFunc = (val) => {
-    return (
-        <Note {...val}/>
-    )
-}
 
 function App(){
     const [notes, setNotes] = useState([])
